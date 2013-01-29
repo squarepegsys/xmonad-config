@@ -12,6 +12,7 @@ import Prelude hiding (lookup)
 configDir ="/home/mikeh/.xmonad"
 
 xmobarCmd = "xmobar " ++ configDir ++ "/xmobarrc"
+
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat
     , className =? "Vncviewer" --> doFloat
